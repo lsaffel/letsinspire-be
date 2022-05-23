@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+// note - this is a rough draft and will be added to, adjusted and tested
+
 // Project Resource
 let projects = [
   {
