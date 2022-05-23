@@ -1,6 +1,6 @@
 # Let's Inspire API
 
-This README will be updated more later
+This README will be updated more later.
 
 ## Live url
 
