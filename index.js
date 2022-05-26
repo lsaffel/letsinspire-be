@@ -17,8 +17,29 @@ let projects = [
     id: 2,
     name: "Lisa's Project",
     owner: "Lisa",
-    link: "https://github.com/list/booklist",
-    language: "C#",
+    link: "https://github.com/list/superproject",
+    language: "python",
+  },
+  {
+    id: 3,
+    name: "Daniel's Project",
+    owner: "Daniel",
+    link: "https://github.com/list/anotherjavaproject",
+    language: "java",
+  },
+  {
+    id: 4,
+    name: "Paul's Project",
+    owner: "Paul",
+    link: "https://github.com/list/mygreatjavascriptproject",
+    language: "JavaScript",
+  },
+  {
+    id: 5,
+    name: "Linda's Project",
+    owner: "Linda",
+    link: "https://github.com/list/anotherJavaScriptproject",
+    language: "JavaScript",
   },
 ];
 
