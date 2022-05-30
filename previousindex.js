@@ -2,8 +2,10 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-//  Resource
-let projectResources = [
+// note - this is a rough draft and will be added to, adjusted and tested
+
+// Project Resource
+let projects = [
   {
     id: 1,
     name: "Andy's Booklist Project",
@@ -30,26 +32,24 @@ let projectResources = [
     name: "Paul's Project",
     owner: "Paul",
     link: "https://github.com/list/mygreatjavascriptproject",
-    language: "javascript",
+    language: "JavaScript",
   },
   {
     id: 5,
     name: "Linda's Project",
     owner: "Linda",
     link: "https://github.com/list/anotherJavaScriptproject",
-    language: "javascript",
+    language: "JavaScript",
   },
 ];
 
-// GET http://localhost:3000/api/projectResources?lang=java
-app.get("/api/projectResources", (req, res) => {
+// GET http://localhost:3000/api/projects?lang=java
+app.get("/api/projects", (req, res) => {
   let lang = req.query.lang;
-  let filteredProjectResources = projectResources.filter(function (
-    projectResource
-  ) {
-    return projectResource.language === lang;
+  let filteredProjects = projects.filter(function (project) {
+    return project.language === lang;
   });
-  res.json(filteredProjectResources);
+  res.json(filteredProjects);
 });
 
 app.listen(port, () => {
