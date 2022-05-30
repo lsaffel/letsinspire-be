@@ -4,40 +4,48 @@ const port = 3000;
 
 //  Resource
 let projectResources = [
+  // ----------------------- javascript language resources ------------------------
+
   {
     id: 1,
-    name: "Andy's Booklist Project",
-    owner: "Andy",
-    link: "https://github.com/andy/booklist",
-    language: "java",
+    resourceSubsection: "finTech",
+    resourceType: "article",
+    resourceTitle: "Banking Application",
+    language: "javascript",
+    link: "https://www.blog.duomly.com/node-js-course-with-building-a-fintech-banking-app-lesson-1-start-the-project/",
   },
   {
     id: 2,
-    name: "Lisa's Project",
-    owner: "Lisa",
-    link: "https://github.com/list/superproject",
-    language: "python",
+    resourceSubsection: "finTech",
+    resourceType: "article",
+    resourceTitle: "Stock Chart Application",
+    language: "javascript",
+    link: "https://medium.com/how-to-react/create-a-stock-chart-in-react-js-677be5f2f356",
   },
   {
     id: 3,
-    name: "Daniel's Project",
-    owner: "Daniel",
-    link: "https://github.com/list/anotherjavaproject",
-    language: "java",
+    resourceSubsection: "finTech",
+    resourceType: "article",
+    resourceTitle: "Budget Application",
+    language: "javascript",
+    link: "https://codequs.com/p/HkcSFfseV",
   },
   {
     id: 4,
-    name: "Paul's Project",
-    owner: "Paul",
-    link: "https://github.com/list/mygreatjavascriptproject",
+    resourceSubsection: "healthCare",
+    resourceType: "youtube",
+    resourceTitle: "Meditation Application",
     language: "javascript",
+    link: "https://www.youtube.com/watch?v=oMBXdZzYqEk",
   },
+  // ----------------------- python language resources -------------------------
   {
-    id: 5,
-    name: "Linda's Project",
-    owner: "Linda",
-    link: "https://github.com/list/anotherJavaScriptproject",
-    language: "javascript",
+    id: 21,
+    resourceSubsection: "finTech",
+    resourceType: "youtube",
+    resourceTitle: "Machine Learning Web Application",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=xl0N7tHiwlw",
   },
 ];
 
