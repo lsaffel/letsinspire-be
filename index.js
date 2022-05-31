@@ -49,8 +49,9 @@ let projectResources = [
   },
 ];
 
-// GET http://localhost:3000/api/projectResources?lang=java
+// GET http://localhost:3000/api/projectResources?lang=javascript
 app.get("/api/projectResources", (req, res) => {
+  res.set("Access-Control-Allow-Origin", "*");
   let lang = req.query.lang;
   let filteredProjectResources = projectResources.filter(function (
     projectResource
