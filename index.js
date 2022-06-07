@@ -148,7 +148,7 @@ let projectResources = [
     resourceType: "technicalDocumentation",
     resourceTitle: "Node Framework Docs",
     language: "javascript",
-    link: "LINhttps://nodejs.org/en/docs/K",
+    link: "https://nodejs.org/en/docs/",
   },
   {
     id: 19,
@@ -166,7 +166,6 @@ let projectResources = [
     language: "javascript",
     link: "https://www.reddit.com/r/javascript/",
   },
-  
 
   // ----------------------- python language resources -------------------------
   {
