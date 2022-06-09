@@ -1,0 +1,16 @@
+runtime: nodejs16 # or another supported version. nodejs 16 should be correct, since that's the version of nodejs that I have
+
+# instance_class: F2    This line was in the example app.yaml file, but the documentation says it's optional, and I'm getting an error about this, so I'll try removing this line.
+
+handlers:
+- url: /stylesheets       # this was in the sample code. I'm not sure if this is correct or OK for our project
+  static_dir: stylesheets # same for this one
+
+- url: /.*                      # this was in the sample code. I'm not sure if this is correct or OK for our project
+  secure: always                # same for this one
+  redirect_http_response_code: 301      # same for this one
+  script: auto                          # same for this one
+
+basic_scaling:                  # this one may be required, so I put in the example code, given here in these next 3 lines
+  max_instances: 11
+  idle_timeout: 10m
