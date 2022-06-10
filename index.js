@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const port = 8080;
 
+// This version contains the GCP cloud deployment of the back end
+
 //  Resource
 let projectResources = [
   // ----------------------- javascript language resources ------------------------
