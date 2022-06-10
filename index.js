@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
+// use port 3000 for localhost or port 8080 for Google Cloud deployment
 const port = 8080;
+// const port = 3000;
 
 // This version contains the GCP cloud deployment of the back end
 
@@ -189,6 +191,11 @@ let projectResources = [
 ];
 
 // GET http://localhost:3000/api/projectResources?lang=javascript
+// or:
+// GET https://robotic-door-352700.wn.r.appspot.com/api/projectResources?lang=javascript
+// or:
+//
+
 app.get("/api/projectResources", (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
   let lang = req.query.lang;
