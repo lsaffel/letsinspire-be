@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 8080;
 
-// This version contains the GCP cloud deployment of the back end !!
+// This version contains the GCP cloud deployment of the back end
 
 //  Resource
 let projectResources = [
@@ -174,9 +174,17 @@ let projectResources = [
     id: 21,
     resourceSubsection: "finTech",
     resourceType: "youtube",
-    resourceTitle: "Machine Learning Web Application",
+    resourceTitle: "Algorithmic Trading Course",
     language: "python",
-    link: "https://www.youtube.com/watch?v=xl0N7tHiwlw",
+    link: "https://www.youtube.com/watch?v=xfzGZB4HhEE",
+  },
+  {
+    id: 22,
+    resourceSubsection: "finTech",
+    resourceType: "youtube",
+    resourceTitle: "Analyzing Financial Statements",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=ZAAuGEVJsH8",
   },
 ];
 
