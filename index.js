@@ -7,8 +7,6 @@ const port = 8080; // use for Google Cloud deployment
 // This version contains the GCP cloud deployment of the back end
 // and also now has all of the JavaScript and Python links in it
 
-// *** This is the original main branch ***
-
 //  Resource
 let projectResources = [
   // ----------------------- javascript language resources ------------------------
