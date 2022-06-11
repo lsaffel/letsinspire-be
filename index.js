@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 // use port 3000 for localhost or port 8080 for Google Cloud deployment
-// const port = 8080;   // use for Google Cloud deployment
-const port = 3000; // use for localhost
+const port = 8080; // use for Google Cloud deployment
+// const port = 3000; // use for localhost
 
 // This version contains the GCP cloud deployment of the back end
 // and also now has all of the JavaScript and Python links in it
