@@ -5,6 +5,7 @@ const app = express();
 const port = 3000; // use for localhost
 
 // This version contains the GCP cloud deployment of the back end
+// and also now has all of the JavaScript and Python links in it
 
 //  Resource
 let projectResources = [
