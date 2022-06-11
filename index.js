@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 // use port 3000 for localhost or port 8080 for Google Cloud deployment
-const port = 8080;
-// const port = 3000;
+// const port = 8080;   // use for Google Cloud deployment
+const port = 3000; // use for localhost
 
 // This version contains the GCP cloud deployment of the back end
 
@@ -188,13 +188,159 @@ let projectResources = [
     language: "python",
     link: "https://www.youtube.com/watch?v=ZAAuGEVJsH8",
   },
+  {
+    id: 23,
+    resourceSubsection: "finTech",
+    resourceType: "youtube",
+    resourceTitle: "Stock Market Web Application",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=eNDADqa9858",
+  },
+  {
+    id: 24,
+    resourceSubsection: "healthCare",
+    resourceType: "youtube",
+    resourceTitle: "Pose Estimation and Gym Tracker",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=06TE_U21FK4",
+  },
+  {
+    id: 25,
+    resourceSubsection: "healthCare",
+    resourceType: "youtube",
+    resourceTitle: "Doctor Appointment Application",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=3_3q_dE4_qs",
+  },
+  {
+    id: 26,
+    resourceSubsection: "healthCare",
+    resourceType: "article",
+    resourceTitle: "Calorie Calculator Application",
+    language: "python",
+    link: "https://data-flair.training/blogs/python-project-calorie-calculator-django/",
+  },
+  {
+    id: 27,
+    resourceSubsection: "education",
+    resourceType: "youtube",
+    resourceTitle: "Learning Management Application",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=JIFqqdRxmVo&list=PLWKjhJtqVAblFnET3DbnAik--u4CBz62G&index=1",
+  },
+  {
+    id: 28,
+    resourceSubsection: "education",
+    resourceType: "youtube",
+    resourceTitle: "Entrance Exam Application",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=UZQqaZgegL4&list=PLTUSGW0o2A2HDYJ5SWLa86OvriGtnw8My&index=2",
+  },
+  {
+    id: 29,
+    resourceSubsection: "education",
+    resourceType: "article",
+    resourceTitle: "Library Management Application",
+    language: "python",
+    link: "https://data-flair.training/blogs/library-management-system-python-project/",
+  },
+  {
+    id: 30,
+    resourceSubsection: "eCommerce",
+    resourceType: "youtube",
+    resourceTitle: "E-Commerce Application",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=YZvRrldjf1Y&list=PLWKjhJtqVAblFnET3DbnAik--u4CBz62G&index=3",
+  },
+  {
+    id: 31,
+    resourceSubsection: "eCommerce",
+    resourceType: "youtube",
+    resourceTitle: "Grocery Store Application",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=0ZaC6JaNpic&list=PLeo1K3hjS3uu1hh_qzBt6e379cofVD9Sb",
+  },
+  {
+    id: 32,
+    resourceSubsection: "eCommerce",
+    resourceType: "youtube",
+    resourceTitle: "Amazon Price Tracker Application",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=Bg9r_yLk7VY",
+  },
+  {
+    id: 33,
+    resourceSubsection: "youtubeVideo",
+    resourceType: "youtube",
+    resourceTitle: "Machine Learning Web Application",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=xl0N7tHiwlw",
+  },
+  {
+    id: 34,
+    resourceSubsection: "youtubeVideo",
+    resourceType: "youtube",
+    resourceTitle: "Django REST API",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=c708Nf0cHrs",
+  },
+  {
+    id: 35,
+    resourceSubsection: "youtubeVideo",
+    resourceType: "youtube",
+    resourceTitle: "Advanced Computer Vision",
+    language: "python",
+    link: "https://www.youtube.com/watch?v=01sAkU_NvOY",
+  },
+  {
+    id: 36,
+    resourceSubsection: "techDocumentation",
+    resourceType: "youtube",
+    resourceTitle: "Python Docs",
+    language: "python",
+    link: "https://docs.python.org/3/",
+  },
+  {
+    id: 37,
+    resourceSubsection: "techDocumentation",
+    resourceType: "technicalDocumentation",
+    resourceTitle: "Flask Framework Docs",
+    language: "python",
+    link: "https://flask.palletsprojects.com/en/2.1.x/",
+  },
+  {
+    id: 38,
+    resourceSubsection: "techDocumentation",
+    resourceType: "technicalDocumentation",
+    resourceTitle: "Django Framework Docs",
+    language: "python",
+    link: "https://docs.djangoproject.com/en/4.0/",
+  },
+  {
+    id: 39,
+    resourceSubsection: "forum",
+    resourceType: "forum",
+    resourceTitle: "StackOverflow - Python",
+    language: "python",
+    link: "https://stackoverflow.com/questions/tagged/python",
+  },
+  {
+    id: 40,
+    resourceSubsection: "forum",
+    resourceType: "forum",
+    resourceTitle: "Python Subreddit",
+    language: "python",
+    link: "https://www.reddit.com/r/python/",
+  },
 ];
 
 // GET http://localhost:3000/api/projectResources?lang=javascript
 // or:
+// GET http://localhost:3000/api/projectResources?lang=python
+// or:
 // GET https://robotic-door-352700.wn.r.appspot.com/api/projectResources?lang=javascript
 // or:
-//
+// GET https://robotic-door-352700.wn.r.appspot.com/api/projectResources?lang=python
 
 app.get("/api/projectResources", (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
