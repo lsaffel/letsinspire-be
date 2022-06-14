@@ -1,17 +1,14 @@
 # Let's Inspire API
 
-This README will be updated more later.
-
 ## Live url
 
-api_base_url : to de determined
-acces link via any http client(postman, curl, other web application utility
+https://lets-inspire-testing.netlify.app/
 
 ## Technologies and Tools used
 
 - Node.js
 - Express
-- Firebase / Firestore (later, if there is time)
+- React.js
 
 ## Installation & Usage
 
@@ -28,11 +25,16 @@ install node.js, express
 
 ## Contributors
 
-Lisa Saffel
+Lisa Saffel (back end developer)
 
 - Github:[@lsaffel](https://github.com/lsaffel)
 - Twitter: [@LLisaVS](https://twitter.com/LLisaVS)
 - Linkedin: [linkedin](https://www.linkedin.com/in/lisa-saffel/)
+
+Linda Shen (front end developer)
+
+- Github:[@lindashendev](https://github.com/lindashendev)
+- Linkedin: [linkedin](https://www.linkedin.com/in/lindashendev/)
 
 ## Show your support
 
