@@ -2,7 +2,7 @@
 
 ## Live url
 
-https://lets-inspire-testing.netlify.app/
+https://letsinspire.netlify.app
 
 ## Technologies and Tools used
 
