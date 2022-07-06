@@ -9,6 +9,8 @@ https://letsinspire.netlify.app
 - Node.js
 - Express
 - React.js
+- Netlify - front end deployment
+- Google Cloud - back end deployment
 
 ## Installation & Usage
 
